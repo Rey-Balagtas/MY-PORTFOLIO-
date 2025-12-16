@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>My Profile</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fafafa;
+            color: #222;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 18px;
+            border-radius: 8px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+        }
+
+        #rightcolumn {
+            padding-left: 30px;
+            padding-top: 20px;
+        }
+
+        footer p {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        /* Consolidated box style used for Contact / Skills / About */
+        .info-box,
+        #Skills_box,
+        #Contact_box,
+        #About_box {
+            background-color: #F9F8F6;
+            padding: 12px 20px;
+            border-radius: 7px;
+            margin-bottom: 12px;
+        }
+
+        table { width: 100%; border-collapse: collapse; }
+        td { vertical-align: top; padding: 8px; }
+
+        img { display: block; max-width: 100%; height: auto; }
+
+        @media (max-width: 600px) {
+            .container { width: 95%; padding: 14px; }
+            table, tr, td { display: block; width: 100%; }
+            #rightcolumn { padding-left: 0; padding-top: 10px; }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+
+<div>
+    <h2>
+        <a href="#home">Home</a> |
+        <a href="#about">About Me</a>
+    </h2>
+</div>
+
+<hr>
+
+
+<table>
+    <tr>
+
+        <!-- LEFT COLUMN -->
+        <td>
+
+            <div id="home">
+                <img src="Image.jpg.jpg" alt="Profile Image" width="200" height="200">
+                <br><br>
+                <h2>Rey Simon D. Balagtas</h2>
+                <span>Web Developer | Programmer | Bike Enthusiasts</span>
+            </div>
+
+            <hr>
+
+            <div id = Contact_box>
+                <h3>Contact</h3>
+                <p>Email: Reysimon50@gmail.com</p>
+            </div>
+
+            <hr>
+            
+            <div id = Skills_box>
+                <h3>Skills</h3>
+                <dl>
+                    <dt>Frontend</dt>
+                    <dd>HTML</dd>
+                    <dd>Phyton</dd>
+                    <dd>Java</dd>
+                </dl>
+            </div>
+
+        </td>
+
+        <!-- RIGHT COLUMN -->
+        <td id="rightcolumn">
+            <div id="about">
+<div id = #About_box >    
+                <h2>About Me</h2>
+                <p> My name is Rey Simon  Balagtas, and I am a web developer with experience in HTML, Java, Python, and Java.
+I enjoy building responsive websites, solving programming problems, and exploring new tools that help me grow as a developer.
+Outside of coding, I am a bike enthusiast who loves spending time outdoors and staying active.</p>
+            </div>
+</div>
+            <hr>
+
+            <div>
+                <h2>Message Me</h2>
+                <form action="submit" method="post">
+                    <p>
+                        Name:<br><input type="text" name="name">
+                    </p>
+                    <p>
+                        Email:<br><input type="email" name="email">
+                    </p>
+                    <p>
+                        <input type="submit" value="Send">
+                    </p>
+                </form>
+            </div>
+        </td>
+
+    </tr>
+</table>
+
+<hr>
+
+<!-- FOOTER -->
+<footer>
+    <p><strong>WebProg - Web Programming 2025</strong></p>
+</footer>
+
+</div> <!-- end container -->
+
+</body>
+</html>
